@@ -4,6 +4,8 @@
 
 This project showcases a carousel component built using React, Tailwind CSS, and Slick Carousel. The carousel is responsive, customizable, and designed with a modern, clean UI using Tailwind CSS.
 
+## deployment Link https://vercel.com/prabhatkumar11s-projects/sparts
+
 ## Features
 
 - **Responsive Carousel:** Adjusts the number of visible slides based on the screen size.
