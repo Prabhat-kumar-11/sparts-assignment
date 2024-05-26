@@ -1,8 +1,26 @@
-# React + Vite
+# Carousal Component with React and Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project showcases a carousel component built using React, Tailwind CSS, and Slick Carousel. The carousel is responsive, customizable, and designed with a modern, clean UI using Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Responsive Carousel:** Adjusts the number of visible slides based on the screen size.
+- **Custom Arrows:** Customizable arrow components for navigation.
+- **Smooth Transitions:** Utilizes Slick Carousel for smooth slide transitions.
+- **User-Friendly Design:** Modern and clean UI with Tailwind CSS styling.
+
+## Tech Stack
+
+- **React:** A JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **Slick Carousel:** A widely used jQuery plugin for creating carousels.
+- **React-Slick:** A React wrapper for the Slick Carousel plugin.
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/carousel-component.git
+   cd carousel-component
