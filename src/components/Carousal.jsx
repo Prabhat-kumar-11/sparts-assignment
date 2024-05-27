@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './carousel.css'; // Import the custom CSS file
 
 const dummyData = [
   {
@@ -62,6 +63,9 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -92,11 +96,11 @@ const Carousel = () => {
   return (
     <section className="bg-inherit h-screen py-8">
       <div>
-        <div className=" mx-auto">
+        <div className="mx-auto">
           <Slider {...settings}>
             {dummyData.map((item) => (
               <div key={item.id} className="p-2">
-                <div className="relative w-[500px] h-[400px] bg-gray-300 rounded overflow-hidden">
+                <div className="relative w-[500px] h-[400px] bg-gray-300 rounded overflow-hidden transform transition-transform hover:scale-105 cursor-pointer">
                   <img
                     src={item.img}
                     alt={item.title}

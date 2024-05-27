@@ -12,63 +12,48 @@ export const Carousal2 = () => {
     },
     {
       name: "Paul",
-      comment:
-        "A wonderful environment for learning. The teachers are amazing.",
+      comment: "A wonderful environment for learning. The teachers are amazing.",
       image: "https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg",
     },
     {
       name: "Lee",
-      comment:
-        "My child has made great progress. Highly recommend this institute.",
-      image:
-        "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      comment: "My child has made great progress. Highly recommend this institute.",
+      image: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Harry",
       comment: "Fantastic facilities and a supportive learning environment.",
-      image:
-        "https://images.pexels.com/photos/678783/pexels-photo-678783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "https://images.pexels.com/photos/678783/pexels-photo-678783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Tom",
-      comment:
-        "My child loves the activities and the interactive learning methods.",
-      image:
-        "https://images.pexels.com/photos/1687675/pexels-photo-1687675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      comment: "My child loves the activities and the interactive learning methods.",
+      image: "https://images.pexels.com/photos/1687675/pexels-photo-1687675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Chris",
-      comment:
-        "Impressive teaching techniques and a nurturing environment for kids.",
-      image:
-        "https://images.pexels.com/photos/2589650/pexels-photo-2589650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      comment: "Impressive teaching techniques and a nurturing environment for kids.",
+      image: "https://images.pexels.com/photos/2589650/pexels-photo-2589650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Anna",
       comment: "The teachers are very dedicated and my child is thriving here.",
-      image:
-        "https://images.pexels.com/photos/3778212/pexels-photo-3778212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "https://images.pexels.com/photos/3778212/pexels-photo-3778212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Isabella",
-      comment:
-        "A wonderful place for education. The staff is very friendly and helpful.",
-      image:
-        "https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      comment: "A wonderful place for education. The staff is very friendly and helpful.",
+      image: "https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Prabhat",
-      comment:
-        "The best decision we made for our child. They are learning so much!",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NThQQ3QZ2fqde8ww_c0EbKAAF_Pflfjf2cmp_bi4DrrgB2yQOtWMZlXz8IoXlDJHDUI&usqp=CAU",
+      comment: "The best decision we made for our child. They are learning so much!",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NThQQ3QZ2fqde8ww_c0EbKAAF_Pflfjf2cmp_bi4DrrgB2yQOtWMZlXz8IoXlDJHDUI&usqp=CAU",
     },
     {
       name: "Pankaj",
-      comment:
-        "Great curriculum and engaging activities. My child is very happy here.",
-      image:
-        "https://media.istockphoto.com/id/1338134319/photo/portrait-of-young-indian-businesswoman-or-school-teacher-pose-indoors.jpg?s=2048x2048&w=is&k=20&c=OmMa2GTDqnWuarL0YQu6opsw_TcWYKE-rJb3exUAAQA=",
+      comment: "Great curriculum and engaging activities. My child is very happy here.",
+      image: "https://media.istockphoto.com/id/1338134319/photo/portrait-of-young-indian-businesswoman-or-school-teacher-pose-indoors.jpg?s=2048x2048&w=is&k=20&c=OmMa2GTDqnWuarL0YQu6opsw_TcWYKE-rJb3exUAAQA=",
     },
   ];
 
@@ -77,6 +62,9 @@ export const Carousal2 = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -110,9 +98,7 @@ export const Carousal2 = () => {
         <Slider {...settings}>
           {data.map((el, i) => (
             <div key={i} className="p-2">
-              {" "}
-              {/* Added padding to create space between slides */}
-              <div className="bg-[#b0eaf3] p-6 flex flex-col justify-between shadow-lg hover:bg-blue-50">
+              <div className="bg-[#b0eaf3] p-6 flex flex-col justify-between shadow-lg hover:bg-blue-50 transition-transform hover:scale-105 cursor-pointer">
                 <div className="text-left">
                   <p className="font-bold text-xl md:text-2xl text-[black]">
                     {el.name}
