@@ -4,7 +4,7 @@
 
 This project showcases a carousel component built using React, Tailwind CSS, and Slick Carousel. The carousel is responsive, customizable, and designed with a modern, clean UI using Tailwind CSS.
 
-## deployment Link https://sparts-eight.vercel.app/
+## deployment Link https://sparts-nu.vercel.app/
 
 ## Features
 
