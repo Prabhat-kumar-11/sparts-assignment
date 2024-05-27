@@ -39,18 +39,20 @@ const HeroBanner = () => {
       </div>
       <div className="flex gap-9 mt-8">
         <motion.button
-          className="bg-yellow-400 px-6 py-3 rounded-[25px]"
+          className="bg-yellow-400 px-6 py-3 rounded-[25px] hover:bg-yellow-800 shadow-md hover:shadow-lg"
           animate={{ scale: [0.9, 1] }}
           transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.05, y: -5 }}
         >
           <a href="#" className="text-white font-semibold">
             For Academies
           </a>
         </motion.button>
         <motion.button
-          className="bg-yellow-400 px-6 py-3 rounded-[25px]"
+          className="bg-yellow-400 px-6 py-3 rounded-[25px] hover:bg-yellow-800 shadow-md hover:shadow-lg"
           animate={{ scale: [0.9, 1] }}
           transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.05, y: -5 }}
         >
           <a href="#" className="text-white font-semibold">
             SpArts in your home

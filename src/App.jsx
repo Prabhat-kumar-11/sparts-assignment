@@ -12,20 +12,20 @@ function App() {
       <HeroBanner />
       <section className="bg-[#318CE7] h-screen px-8  py-8">
         <div>
-          <h2 className="text-4xl text-start w-[200px]  text-white">
+          <h2 className="text-4xl text-start w-[200px]  text-white ml-[15px]">
             Explore Our Top Academies
           </h2>
 
           <Carousel />
         </div>
       </section>
-      <section className=" py-8 bg-black">
-        <h2 className="text-3xl font-bold text-center  text-[#ded553]">
+      <section className=" py-8 bg-[#7CB9E8]">
+        <h2 className="text-3xl font-bold text-center  text-[#fff34f]">
           Happy Kids, Satisfied Parents!
         </h2>
        <Carousal2 />
       </section>
-      <footer className="bg-yellow-400 py-8 text-center">
+      <footer className="bg-yellow-400 py-8  h-[300px] text-center">
         <h2 className="text-2xl font-bold">Stay Updated</h2>
         <p>Get the latest updates on academies near you!</p>
         <div className="mt-4 flex justify-center gap-5">

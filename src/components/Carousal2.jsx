@@ -94,7 +94,7 @@ export const Carousal2 = () => {
 
   return (
     <section className="bg-inherit py-8">
-      <div className="w-4/5 mx-auto">
+      <div className="w-[95%] mx-auto">
         <Slider {...settings}>
           {data.map((el, i) => (
             <div key={i} className="p-2">
