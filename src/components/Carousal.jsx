@@ -100,7 +100,7 @@ const Carousel = () => {
           <Slider {...settings}>
             {dummyData.map((item) => (
               <div key={item.id} className="p-2">
-                <div className="relative w-[500px] h-[400px] bg-gray-300 rounded overflow-hidden transform transition-transform hover:scale-105 cursor-pointer m-[10px]">
+                <div className="relative w-[400px] h-[400px] bg-gray-300 rounded overflow-hidden transform transition-transform hover:scale-105 cursor-pointer m-[10px]">
                   <img
                     src={item.img}
                     alt={item.title}
